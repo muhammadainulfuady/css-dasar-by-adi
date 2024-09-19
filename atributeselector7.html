@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector menggunakan kurung [Gini] CSS</title>
+    <style>
+      /* menggunkan value * */
+      p[title*="belajar"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p title="belajar">
+      <!-- maka ini yang dipilih -->
+      Ini di pilih karena value title menggunakan * yang artinya kalau semua
+      title ada kata belajar maka itu yang di pilih entah belajar nya dimana
+      saja
+    </p>
+    <p title="belajarpemrograman">
+      Ini dipilih karena title dari paragraph ini belajarpemrograman kalau
+      menggunakan atribut * makan terpilih beda dengan atribut sebelumnya
+    </p>
+    <p title="belajar-pemrograman">
+      <!-- ini juga di pilih karena menggunakan - strip -->
+      Ini dipilih karena title dari paragraph ini belajar-pemrograman,
+    </p>
+    <p title="pemrograman belajar">
+      Ini dipilih karena title dari paragraph ini pemrograman belajar, karena
+      menggunkan value * , jadi kalau belajarnya di belakang terpilih, depan
+      terpilih pokoknya ada kata belajar nya
+    </p>
+  </body>
+</html>

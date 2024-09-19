@@ -1,0 +1,17 @@
+* {
+  font-family: sans-serif;
+}
+
+/* H1 Komentar 1 Baris*/
+h1 {
+  color: red;
+  font-size: 20px;
+}
+
+/* H2
+    Komentar 2-3 
+    Baris */
+h2 {
+  color: blue;
+  font-size: 15px;
+}

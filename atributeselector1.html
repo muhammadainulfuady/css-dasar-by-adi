@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- kalau video di pzn menit 39:23 -->
+    <title>Selector menggunakan kurung [Gini] CSS</title>
+    <style>
+      /* menggunakan value target, point targetnya menuju menyeleksi target */
+      a[target] {
+        color: red;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .tanpa {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="" target=""
+      >Dengan Target, apapun targetnya kalau valuenya dia menggunakan target
+      maka akan terseleksi</a
+    >
+    <br />
+    <a href="" class="tanpa">Tanpa Target</a> <br />
+    <a href="" target="">Dengan Target </a>
+    <br />
+    <a href="" class="tanpa">Tanpa Target</a>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Sibling Selectro CSS</title>
+    <style>
+      div ~ p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <article>
+        <p>
+          Ini tidak dipilih karena bukan parent dari div, tapi parent nya
+          article
+        </p>
+      </article>
+      <p>
+        Ini tidak di pilih karena p ini adalah child dari si div bukan saudara
+        si div
+      </p>
+    </div>
+    <p>
+      Ini dipilih karena tepat di bawah tag div atau bisa disebut juga karena p
+      ini adalah saudara si div
+    </p>
+    <p>
+      Ini juga dipilih karena walaupun bukan di tepat di bawah div tapi termasuk
+      kayak saudara tiri, kalau p yang di atas bisa disebut dengan saudara
+      kandung
+    </p>
+  </body>
+</html>

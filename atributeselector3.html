@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector menggunakan kurung [Gini] CSS</title>
+    <style>
+      /* menggunakan value ~ */
+      p[title~="belajar"] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p title="belajar pemrograman">
+      <!-- maka ini yang dipilih -->
+      Ini di pilih karena title dari paragraph ini tidak di gabung
+    </p>
+    <p title="belajarpemrograman">
+      Ini tidak dipilih karena title dari paragraph ini tidak dipisah
+    </p>
+  </body>
+</html>

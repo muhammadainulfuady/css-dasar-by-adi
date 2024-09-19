@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child CSS</title>
+    <style>
+      div > p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <article>
+        <p>
+          Ini tidak dipilih karena bukan parent dari div, tapi parent nya
+          article
+        </p>
+      </article>
+      <p>Ini di pilih karena p ini adalah child dari si div</p>
+    </div>
+    <p>Ini tidak dipilih karena parent nya si p bukan div, melainkan body</p>
+  </body>
+</html>

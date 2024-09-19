@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- kalau video di pzn menit 39:23 -->
+    <title>Selector menggunakan kurung [Gini] CSS</title>
+    <style>
+      /* menggunakan value target, point targetnya menuju _blank */
+      a[target="_blank"] {
+        color: red;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="" target="_blank">Dengan Target _blank</a> <br />
+    <a href="">Tanpa Target</a> <br />
+    <a href="" target="_self">Dengan Target _self makanya ini tidak berwarna</a>
+    <br />
+    <a href="">Tanpa Target</a>
+  </body>
+</html>
